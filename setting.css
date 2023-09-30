@@ -1,0 +1,107 @@
+
+.change_password {
+  margin-top: 2rem;
+  min-height: 400px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.change_password_icon {
+  height: 120px;
+  width: 120px;
+  text-align: center;
+}
+
+.change_password .dd_text {
+  font-size: 1.4rem;
+  color: red;
+  font-weight: normal;
+}
+
+.change_password .dd_text_l {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #006266;
+}
+
+.change_password .change_btn {
+  width: 70%;
+  margin: 1rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.change_password .change_btn button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  border-radius: 50px;
+  border: none;
+  background: lightblue;
+  cursor: pointer;
+}
+
+.change_password .change_btn .change_btn_one {
+  background: #006266;
+  color: white;
+}
+
+/* ------------ password form here--------------*/
+
+.change_pass_form {
+  width: 400px;
+  min-height: 400px;
+  background: white;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  position: absolute;
+  top: 3.2rem;
+  left: 0;
+  border-radius: 5px;
+  padding-top: 4rem;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+.cc_hh_js {
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.change_pass_form form {
+  margin-top: 3rem;
+}
+
+.change_pass_form form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid lightblue;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+.change_pass_form form button {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.7rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #1B1464;
+  color: white;
+}
+
+.pp_dl_cc_1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}

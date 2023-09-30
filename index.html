@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - Econaz Order Manager</title>
+  <link rel="stylesheet" href="order.css?v=1696057358">
+  <link rel="stylesheet" href="user.css?v=1696057358">
+  <link rel="stylesheet" href="dashboard.css?v=1696057358">
+  <link rel="stylesheet" href="style.css?v=1696057358">
+  <link rel="stylesheet" href="setting.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="sidebar">
+      <ul>
+        <a href="?page=orders">
+          <li data-name="Orders">
+            <i class="fa-solid fa-cart-shopping "></i>
+          </li>
+        </a>
+        <a href="?page=users">
+          <li data-name="User">
+            <i class="fa-solid fa-user "></i>
+          </li>
+        </a>
+        <a href="?page=websites">
+          <li data-name="Websites"><i class="fa-solid fa-up-right-from-square "></i></li>
+        </a>
+        <a href="?page=logs">
+          <li data-name="Logs"><i class="fa-solid fa-message "></i></i></li>
+        </a>
+        <a href="?page=settings">
+          <li data-name="Settings"><i class="fa-solid fa-gear open"></i></li>
+        </a>
+        <a href="?page=logout">
+          <li data-name="Logout"><i class="fa-solid fa-power-off "></i></li>
+        </a>
+      </ul>
+
+    </div>
+    <div id="main-content">
+      <div class="search-bar">
+        <marquee>This system under development. If you have any question kindly ask here: sajonybd@gmail.com</marquee>
+        <!--<input type="text" placeholder="search product, order, customer..." id="search">-->
+        <div id="noti-icon">
+          <i class="fa-solid fa-bell" id="show-noti"></i>
+        </div>
+      </div>
+      <div class="main-context">This is settings
+
+
+        <!-- ----------password change card goes here---------- -->
+
+        <div class="change_password">
+          <img src="images/lock.png" alt="lock icon" class="change_password_icon">
+          <p class="dd_text">Your password has expired!</p>
+          <p class="dd_text_l">You must change your password and log in!</p>
+
+          <div class="change_btn">
+            <button class="change_btn_one">Change now</button>
+            <button>Cancel</button>
+          </div>
+        </div>
+
+        <!-- ----------change password form here---------- -->
+
+        <div class="change_pass_form">
+          <h1 class="cc_hh_js">Change password</h1>
+          <form action="">
+            <div>
+              <label for="new_password">new password</label>
+              <input type="password" placeholder="password" name="new_password">
+            </div>
+
+            <div>
+              <label for="confirm_password">confirm password</label>
+              <input type="password" placeholder="password" name="new_password">
+            </div>
+
+            <button>Change my password</button>
+
+          </form>
+
+          <img src="images/cancel.png" alt="cancel" class="pp_dl_cc_1">
+        </div>
+
+        <!-- ----------change password script here---------- -->
+
+        <script>
+
+          let btn = document.querySelector(".change_btn_one");
+          let passwordFormContainer = document.querySelector(".change_pass_form");
+          const canChangPass = document.querySelector('.pp_dl_cc_1');
+          
+          
+          function passwordForm() {
+            passwordFormContainer.style.transform = "scale(1)";
+          }
+
+          function cancelPassForm() {
+            passwordFormContainer.style.transform = "scale(0)";
+          }
+
+          btn.addEventListener("click", passwordForm)
+          canChangPass.addEventListener("click", cancelPassForm)
+        </script>
+
+
+
+      </div>
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="main.js?v=1696057358"></script>
+</body>
+
+</html>
